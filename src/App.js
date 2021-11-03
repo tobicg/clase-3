@@ -1,13 +1,16 @@
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
 import { ItemListContainer, saludo } from './components/ItemListContainer/ItemListContainer.jsx'
+import ItemCount from './components/ItemCount/ItemCount';
+import Formulario from './components/Formulario/Formulario';
 
 function App() { //componente tipo funcion
 
   return (
     <div className="App">
       <NavBar />
-      <ItemListContainer saludo='Hola!'/>
+      <ItemListContainer saludo=''/>
+      <Formulario title='Elige una cantidad'/>
     </div>
   );
 }
