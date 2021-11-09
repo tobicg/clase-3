@@ -1,0 +1,38 @@
+.itemCard {
+    width: 50%;
+    display: flex;
+    background-color: rgba(61, 61, 61, 0.548);
+    box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(3px);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 30vh;
+}
+
+.itemCard img {
+    width: 30%;
+    height: 30%;
+    align-self: center;
+}
+
+.itemCard-div {
+    width: 60%;
+}
+
+.itemCard-div h3 {
+    font-family: "Bebas Neue";
+    color: white;
+    font-size: 50px;
+    margin: 10px;
+}
+
+.itemCard-div p {
+    font-family:"Roboto", sans-serif;
+    color: white;
+    text-align: center;
+    align-items: center;
+    padding: 15px;
+}
