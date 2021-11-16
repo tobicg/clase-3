@@ -1,20 +1,27 @@
-import './App.css';
-import NavBar from './components/NavBar/NavBar';
-import { ItemListContainer, saludo } from './components/ItemListContainer/ItemListContainer.jsx'
-import ItemCount from './components/ItemCount/ItemCount';
-import Formulario from './components/Formulario/Formulario';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
+import NavBar from './components/NavBar/NavBar'
+import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
+import CartContextProvider from "./CartContext/CartContext";
+
 
 function App() { //componente tipo funcion
 
   return (
-    <div className="App">
-      <NavBar />
-      <ItemListContainer saludo=''/>
-      <Formulario title='Elige una cantidad'/>
-    </div>
+    <CartContextProvider>
+      <BrowserRouter>
+        <div className="App">
+          <NavBar/>
+          <Routes>
+            <Route path="/cart" element={<ItemListContainer/>}/>
+            <Route path="/categoria/:id" element={<ItemListContainer />}/>
+            <Route path="/item/:id" element={<ItemDetailContainer/>}/>
+          </Routes>
+        </div>
+      </BrowserRouter>
+    </CartContextProvider>
   );
 }
 
-//no usamos mas CLASS, ahora usamos className
 
 export default App;

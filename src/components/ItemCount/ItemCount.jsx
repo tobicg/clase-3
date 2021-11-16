@@ -12,19 +12,11 @@ const ItemCount = ({stock, initial, onAdd}) => {
         setCount(count-1)
     }
 
-    const onAdd = () => {
-        setCount(0)
-    }
-
     return (
         <div className="itemCount">
-            <h2 className="cantidad">Cantidad: <span>{count}</span></h2>
-            <h2 className="stock">Stock: <span>{stock}</span></h2>
-            <div className="buttons">
             <button className="btnResta" onClick={restar} disabled={count === 0}>-</button>
+            <h2 className="cantidad"><span>{count}</span></h2>
             <button className="btnSuma" onClick={sumar} disabled={count === stock}>+</button>
-            <button className="btnAddCarrito" onClick={onAdd} disabled={count === 0}>Añadir al carrito</button>
-            </div>
         </div>
     )
 }

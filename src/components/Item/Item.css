@@ -1,28 +1,39 @@
 .itemCard {
-    width: 50%;
+    width: 100%;
     display: flex;
     background-color: rgba(61, 61, 61, 0.548);
     box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.5);
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(3px);
-    margin: 20px;
+    margin: 30px;
     padding: 20px;
     border-radius: 10px;
-    min-height: 30vh;
 }
 
 .itemCard img {
-    width: 30%;
-    height: 30%;
+    width: 350px;
+    height: 350px;
     align-self: center;
 }
 
 .itemCard-div {
     width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
 }
 
 .itemCard-div h3 {
+    font-family: "Bebas Neue";
+    color: white;
+    font-size: 70px;
+    margin: 10px;
+}
+
+.itemCard-div h2 {
     font-family: "Bebas Neue";
     color: white;
     font-size: 50px;
@@ -35,4 +46,22 @@
     text-align: center;
     align-items: center;
     padding: 15px;
+}
+
+.btnVermas {
+    width: 130px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-family:"Roboto", sans-serif;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0);
+    transition: 0.3s;
+}
+
+.btnVermas:hover {
+    transform: scale(1.05);
 }

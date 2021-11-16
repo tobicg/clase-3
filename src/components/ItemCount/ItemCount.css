@@ -1,90 +1,41 @@
 .itemCount {
-    width: 40%;
-    background-color: rgba(221, 221, 221, 0.7);
-    box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.5);
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    border-left: 1px solid rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(10px);
-    border-radius: 20px;
-}
-
-.buttons {
+    width: 130px;
+    height: 60px;
     display: flex;
-    width: 100%;
     justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0);
 }
 
 .btnResta {
+    background: none;
     width: 50px;
     height: 50px;
     justify-content: center;
     align-items: center;
     color: white;
     border: none;
-    background-color: rgb(126, 0, 0);
-    border-radius: 5px;
     font-size: 30px;
-    transition: 0.3s;
     cursor: pointer;
     margin: 15px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0);
-}
-
-.btnResta:hover {
-    background-color: rgb(173, 0, 0);
-    transform: scale(1.1);
 }
 
 .btnSuma {
+    background: none;
     width: 50px;
     height: 50px;
     justify-content: center;
     align-items: center;
     color: white;
     border: none;
-    background-color: rgb(18, 143, 49);
-    border-radius: 5px;
     font-size: 30px;
-    transition: 0.3s;
     cursor: pointer;
     margin: 15px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0);
-}
-
-.btnSuma:hover {
-    background-color: rgb(26, 187, 66);
-    transform: scale(1.1);
-}
-
-.btnAddCarrito {
-    width: 200px;
-    height: 50px;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    border: none;
-    background-color: rgb(18, 143, 49);
-    border-radius: 5px;
-    font-size: 20px;
-    transition: 0.3s;
-    cursor: pointer;
-    margin: 15px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0);
-}
-
-.btnAddCarrito:hover {
-    background-color: rgb(26, 187, 66);
-    transform: scale(1.1);
 }
 
 .cantidad {
     color: white;
     font-family: "Bebas Neue";
-    font-size: 40px;
-}
-
-.stock {
-    color: white;
-    font-family: "Bebas Neue";
-    font-size: 40px;
+    font-size: 25px;
 }

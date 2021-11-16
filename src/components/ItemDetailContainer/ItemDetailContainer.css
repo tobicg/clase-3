@@ -1,14 +1,16 @@
-.itemListContainer {
+.itemDetailContainer {
     width: 100%;
-    min-height: 100vh;
+    min-height: 82.9vh;
     background-image: url(./../Imgs/restaurant.jpg);
     margin: 0;
     padding: 10px 0;
-    display: flex;
     text-align: center;
     justify-content: center;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
