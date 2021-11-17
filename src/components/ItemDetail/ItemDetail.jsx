@@ -1,22 +1,21 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { useCartContext } from './../../CartContext/CartContext'
 import ItemCount from "../ItemCount/ItemCount"
 import './ItemDetail.css'
 
 const ItemDetail = ({ item }) => {
     const [wasClick, setWasClick] = useState(false)
 
-    const [quantity, setQuantity] = useState(1)
-    const itemQuantity = (count) => {
-        setQuantity(count)
+    const [count, setCount] = useState(1)
+    
+    const { cartList, agregarPedido } = useCartContext()
 
-    }
-    console.log(quantity)
-
-    const onClick = () => {
+    const onAdd = (count) => {
+        setCount(count)
+        agregarPedido({ ...item, item , cantidad: count })
         setWasClick(true)
     }
-
 
     return (
         <>
@@ -28,15 +27,11 @@ const ItemDetail = ({ item }) => {
                         <p className="item-detail-txt">{item.txt}</p>
                         <p className="item-detail-price">${item.price}</p>
                     </div>
-                    <div className="item-detail-unidades">
-                        <p>Unidades:</p>
-                        <ItemCount initial={1} onAdd={itemQuantity} stock={item.stock} />
-                    </div>
                     {wasClick === false ?
-                        <button className="addPedido" type="button" onClick={onClick}>Agregar a tu pedido </button> :
+                        <ItemCount initial={1} onAdd={onAdd} stock={item.stock}/> :
                         <ul>
-                            <Link to='/cart'>
-                                <button className="addPedido" type="button">Agregar más productos</button>
+                            <Link to='/'>
+                                <button className="addPedido" type="button">Agregar más comida</button>
                             </Link>
                             <Link to='/cart'>
                                 <button className="addPedido" type="button">Finalizar pedido</button>

@@ -18,7 +18,7 @@ const productos = [
         "title": "POLLO CHRISPY",
         "txt":"Para los amantes del pollo, con un corte de 150g rebosado con pan rallado de la casa, frito en el punto exacto y con la infaltable salsa especial, ideal para innovar un poco.",
         "price":700,
-        "img": "https://i.ibb.co/0cspxRV/carta3.png"
+        "img": "https://i.ibb.co/SvFbdjf/carta5.png"
     },
     {
         "id": "4",
@@ -32,7 +32,7 @@ const productos = [
         "title": "CLÁSICA BACONATOR",
         "txt":"No puede faltar la clásica hamburguesa, son 260g de carne de primera, con cheddar y el mejor bacon que vas a probar en tu vida. Si te gusta lo clásico, esta burger es para vos.",
         "price":600,
-        "img": "https://i.ibb.co/SvFbdjf/carta5.png"
+        "img": "https://i.ibb.co/0cspxRV/carta3.png"
     },
     {
         "id": "6",

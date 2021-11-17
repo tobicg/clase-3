@@ -13,7 +13,7 @@ function App() { //componente tipo funcion
         <div className="App">
           <NavBar/>
           <Routes>
-            <Route path="/cart" element={<ItemListContainer/>}/>
+            <Route path="/" element={<ItemListContainer/>}/>
             <Route path="/categoria/:id" element={<ItemListContainer />}/>
             <Route path="/item/:id" element={<ItemDetailContainer/>}/>
           </Routes>
