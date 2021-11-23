@@ -9,12 +9,12 @@ const ItemDetail = ({ item }) => {
 
     const [count, setCount] = useState(1)
     
-    const { cartList, agregarPedido } = useCartContext()
+    const { addItem } = useCartContext()
 
     const onAdd = (count) => {
-        setCount(count)
-        agregarPedido({ ...item, item , cantidad: count })
+        addItem(item, count)
         setWasClick(true)
+        setCount(count)
     }
 
     return (

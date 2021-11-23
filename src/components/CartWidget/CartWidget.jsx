@@ -1,12 +1,15 @@
 import './CartWidget.css';
+import { useCartContext } from '../../CartContext/CartContext';
 import cart from './../Icons/cart-outline.svg';
 
 const CartWidget = () => {
-    return (
-        <div className="cartWidget">
+    const { cantItem } = useCartContext()
+ return(
+    <div className="cartWidget">
             <img src={cart} alt="cart" />
-        </div>
-    )
+            <span className="nCarrito"> {cantItem() !== 0 && cantItem()} </span>
+    </div>
+ )
 }
 
 export default CartWidget
