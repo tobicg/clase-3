@@ -10,7 +10,7 @@ export const Cart = () => {
 
     return (
         <div className="cart">
-            {cartList.length === 0 ? <CartEmpty h1="Su carrito está vacío" /> :
+            {cartList.length === 0 ? <CartEmpty h1="Todavía no ha agregado nada a su pedido" /> :
 
                 cartList.map(item =>
                     <div className="cart-item">
