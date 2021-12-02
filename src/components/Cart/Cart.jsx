@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { useCartContext } from '../../CartContext/CartContext'
 import { CartEmpty } from './CartEmpty.jsx'
 import './Cart.css'
+
 export const Cart = () => {
     
     const { cartList, clear, removeItem, totalPrice  } = useCartContext()
